@@ -38,6 +38,9 @@
                             <constraint firstItem="4CH-ys-D7L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sSv-VV-AA9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myLabel" destination="4CH-ys-D7L" id="WYO-Fw-ddY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
