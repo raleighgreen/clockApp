@@ -27,7 +27,7 @@
                                     <constraint firstAttribute="height" constant="67.5" id="AdO-mX-1ou"/>
                                     <constraint firstAttribute="width" constant="263.5" id="thG-TT-FTr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="56"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="45"/>
                                 <color key="textColor" red="0.5122908979263201" green="0.48163777668204355" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>

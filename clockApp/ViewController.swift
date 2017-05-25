@@ -26,7 +26,34 @@ class ViewController: UIViewController {
     func updateClock() {
         
         //print("Updated from clock")
+        let dateNow: NSDate = NSDate()
+        let calendar = NSCalendar.current
+        let components = calendar.dateComponents([.hour, .minute, .second], from: dateNow as Date)
         
+        //print(components.second!)
+        
+        let hour: Int = components.hour! > 12 ? components.hour! - 12 : components.hour!
+        
+        /*
+        var hour: Int = 0
+        if components.hour! > 12 {
+            hour = components.hour! - 12
+        } else {
+            hour = components.hour!
+        }
+        */
+        
+        let hourString: String = hour > 9 ? "\(hour)" : "0\(hour)"
+        
+        let minutes = components.minute! > 9 ? "\(components.minute!)" : "0\(components.minute!)"
+        
+        let seconds = components.second! > 9 ? "\(components.second!)" : "0\(components.second!)"
+        
+        let am = components.hour! > 12 ? "PM" : "AM"
+        
+        let timeString = "\(hourString):\(minutes):\(seconds) \(am)"
+        
+        myLabel.text = timeString
     }
     
     override func didReceiveMemoryWarning() {
